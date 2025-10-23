@@ -88,22 +88,22 @@ AnnualCrop, Forest, HerbaceousVegetation, Highway, Industrial, Pasture, Permanen
 
 ## **Quick Start**
 
-### **Installation**
+## **Installation**
 ```bash
 pip install torch torchvision scikit-learn matplotlib seaborn tqdm
 pip install torchcam captum
 ```
-### **Basic Usage**
+## **Basic Usage**
 
-# Train the model
+### Train the model
 trainer = Trainer(model, train_loader, val_loader, config)
 history = trainer.train()
 
-# Evaluate
+### Evaluate
 evaluator = ComprehensiveModelEvaluator(model, val_loader, class_names, device)
 results = evaluator.comprehensive_evaluation()
 
-# Explain predictions
+### Explain predictions
 xai_analyzer = MultiMethodXAI(model, device)
 explanations = xai_analyzer.generate_explanations(image_tensor)
 
@@ -118,14 +118,14 @@ Ensemble Components:
 The ensemble automatically learns which models to trust most using learnable weights.
 
 ## ⚙️ **Training Features**
-# **Smart Augmentations**
+### **Smart Augmentations**
 Random flips, rotations, color changes
 
 CutMix: Combins parts of different images
 
 Automatic image adjustments
 
-## **Optimization**
+### **Optimization**
 Batch Size: 64
 
 Learning Rate: 0.001 with cosine scheduling

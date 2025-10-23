@@ -147,18 +147,6 @@ Integrated Gradients: Highlights important pixels
 Saliency Maps: Gradient-based importance
 
 
-
-## 📁 **Project Structure**
-
-eurosat-classification/
-├── training_pipeline.py    # Main training logic
-├── model_factory.py       # Model definitions
-├── data_augmentations.py  # Image transformations
-├── evaluation_framework.py # Metrics and analysis
-├── xai_analysis.py       # Explanation methods
-└── config.py            # Settings
-
-
 ## 📚 **Citation**
 @article{helber2019eurosat,
   title={EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification},
